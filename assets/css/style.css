@@ -31,11 +31,19 @@ header ul {
 /* MAIN  */
 section:first-child {
     position: relative;
-    top: 17rem;
+    top: 22rem;
+    margin-bottom: 22rem;
+    gap: 1rem;
+    border:none;
 }
 
 #circle-logo {
     display: inline-block;
+}
+
+#circle-logo img{
+    position: relative;
+    top: -3.8rem;
 }
 
 header ul {
@@ -45,18 +53,103 @@ header ul {
     font-weight: 600;
 }
 
-section{
-    width: 90%;
+section {
+    width: 80%;
     background-color: white;
-    border-radius: 1rem;
-    border: .01rem rgb(143, 143, 143) solid;
+    border-radius: 0.5rem;
+    /* border: .01rem rgb(143, 143, 143) solid; */
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+     padding: 2rem;
 }
 
+.select-btn{
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.bookmark span:first-child{
+    display: none;
+}
+
+.bookmark{
+    background-color: white;
+    border:none;
+}
+
+.btn-intro{
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+.select-btn:hover{
+    background-color: var(--secondary);
+}
+
+.grey{
+    color: var(--darkgrey);
+}
+
+.price{
+    color:var(--primary);
+    font-weight: 500;
+}
+
+.stock{
+    font-weight: 700;
+}
+
+.stock span{
+    font-weight: 400;
+}
+
+.box{
+    /* border: .01rem rgb(143, 143, 143) solid; */
+    border-radius: 0.5rem;
+}
+
+#about{
+    /* display: flex; */
+    /* gap: ; */
+}
+
+main{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+#stats {
+    display: flex;
+    gap: 2rem;
+}
+
+#stats span{
+    display: block;
+    text-decoration: underline  ;
+    text-underline-offset: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+#stats p{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#stats span{
+    font-weight: 400;
+    font-size: 1rem;
+}
 @media screen and (min-width:576px) {
     #burger {
         display: none;
@@ -65,5 +158,25 @@ section{
     header ul {
         display: flex;
     }
+
+    .bookmark span:first-child{
+        display: inline;
+    }
+
+    .bookmark span:last-child{
+        /* display: none; */
+    }
+
+    .btn-intro{
+        /* width: 100%;  */
+        /* outline: 2px red solid; */
+        
+    }
+    .bookmark{
+        display: flex;
+        align-items: center;
+
+    }
 }
+
 

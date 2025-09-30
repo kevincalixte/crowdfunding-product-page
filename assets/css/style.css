@@ -1,0 +1,68 @@
+/* FONT */
+
+/* HEADER  */
+header {
+    position: relative;
+}
+
+header>div {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header>nav {
+    z-index: 1;
+    position: relative;
+}
+
+#logo,
+#burger,
+header ul {
+    position: absolute;
+    padding: 2rem;
+}
+
+#burger,
+header ul {
+    right: 0;
+}
+
+/* MAIN  */
+section:first-child {
+    position: relative;
+    top: 17rem;
+}
+
+#circle-logo {
+    display: inline-block;
+}
+
+header ul {
+    display: none;
+    color: white;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+section{
+    width: 90%;
+    background-color: white;
+    border-radius: 1rem;
+    border: .01rem rgb(143, 143, 143) solid;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:576px) {
+    #burger {
+        display: none;
+    }
+
+    header ul {
+        display: flex;
+    }
+}
+
